@@ -49,7 +49,7 @@ if (cin.fail() || selection < 1 || selection > 3) {
         cout << "Have a great day, goodbye!" << endl;
     }
 
-
+ //questions for human resources.
 if(selection == 1) { // Output the two functions above, then ask 2 questions( try to word them different from mine.)  then make sure it compiles.
 int  c,f;
 functionBasic();
@@ -72,12 +72,82 @@ functionPrograms();
      }
         else {
             cout << "Let us know your problems and we will be happy to help!" << endl;
+        }// ending of human resource questions
+}
+// Question 1 Accounting Section
+        if(selection == 2){
+            int j,k,l;
+        functionBasic();
+        functionPrograms();
+         cout << "Has your computer been upgraded before?" << endl;                                 //Umar Muhammad
+         cout << "1. Yes, it has" << endl;                                                          //wrote the code
+         cout << "2. No, it hasn't" << endl;                                                        //for the entire accounting questions.
+         cin >> j;
+         if(j==1){
+             cout << "what has been upgraded? " << endl;
+             cout << "1. windows" << endl;
+             cout << "2. Programs" << endl;
+             cin >> k;
+             if(k==2){
+                 cout << "Thank you for the information, and let us know if you run into any issues." << endl;
+             }
+         }
+          }
+          // Question 2
+          cout << " Are you happy with the programs performance on your computer" << endl;
+          cout << "Yes Iam happy with my programs performances" << endl;
+          cout << "No i am not happy with my programs performances" <<endl;
+          cin >> l;
+          if (l==1)[
+              cout << "That sounds great, and let us know how we can improve our services " << endl;
+          ]
+          else{
+              cout << "We are sorry to hear that, and we will do everything we can to make sure, issues like these never happen" << endl;
+          } //ending of accounting questions.
+
+
+else (selection == 3){  //Questions for Marketing Department
+
+int a,b,c; 
+functionBasic();
+functionPrograms();
+    //First question to be asked.
+    cout << "Would you be needing constant access to your files for projects in order to edit them on the go?" << endl; 
+     cout << "1. Yes" << endl;
+     cout << "2. No." << endl;
+     cin >> a; 
+
+    if (a == 1){
+        
+        cout << "A laptop maybe better suited for you and your position." << endl;
+        cout << "Please come see us in order for us to make the correct recommanded laptop for you.";         
+    }
+    //Question two
+    else {
+        cout << "Is your current computer slow at handling your daily tasks?" << endl;
+         cout << "1. Yes";
+         cout << "2. No";
+         cin >> b;
+            if (b == 2){
+                cout << "When your computer is responding slowly is doing the following operations:" << endl;
+                cout << "1.First starting your computer";
+                cout << "2.Trying to open or close a document";
+                cout << "3.Accessing the internet";
+
+                if (c <= 2){
+                    cout << "Sorry for to you are having issues please contact us so we can resolve the issues your are experiencing" << endl;
+                }
+                else{
+                    cout << "Please contact us so we can inform the network tech of your issues.";
+                }
+            }
+            else{
+                cout << "Thank you for you answering our questions, if you run into any issues please inform the IT department." << endl;
+            }
         }
-            
 
 
-
-
+}
 
 
     return 0;
